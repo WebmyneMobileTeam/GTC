@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="app_color">#55A839</color>
+    <color name="background_color">#F2F2F2</color>
+    <color name="geleza_dark_grey">#3E3E3E</color>
+    <color name="light_green">#CBEAC0</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+</resources>

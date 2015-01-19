@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Geleza-TeacherConsole</string>
+    <string name="hello_world">Hello world! Simple</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main_tab">MainTabActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="year_array">
+        <item>Quarter 1</item>
+        <item>Current Quarter</item>
+        <item>Quarter 3</item>
+        <item>Quarter 4</item>
+        <item>All year</item>
+    </string-array>
+    <string-array name="subject_array">
+        <item>Mathematics Literacy</item>
+        <item>Physics</item>
+        <item>Economics</item>
+        <item>Biology</item>
+        <item>Geography</item>
+    </string-array>
+    <string-array name="homework_array">
+        <item>Homework</item>
+        <item>Tests</item>
+        <item>Assignments</item>
+    </string-array>
+
+    <string-array name="class_grade_array">
+        <item>Grade 10</item>
+        <item>Grade 11</item>
+        <item>Grade 12</item>
+    </string-array>
+
+
+
+    <string name="title_activity_main">MainActivity</string>
+
+</resources>

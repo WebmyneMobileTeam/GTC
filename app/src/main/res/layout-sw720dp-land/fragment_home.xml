@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.webmyne.geleza_learnerportal.Home.HomeFragment">
+
+
+
+    <LinearLayout
+        android:id="@+id/middleContainer"
+        android:layout_weight="1"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <!-- Top Layout enable/disable according to need  -->
+        <LinearLayout
+
+            android:id="@+id/linearStartNewConversation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:contentDescription="@string/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher"
+                android:scaleType="centerInside" />
+
+            <LinearLayout
+                android:layout_marginLeft="16dp"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:background="@drawable/rounded_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:hint="Start a conversation"
+                    android:textSize="@dimen/normal_text"
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+                <Button
+
+                    android:paddingRight="32dp"
+                    android:paddingLeft="32dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Post"
+                    android:background="@drawable/rounded_button_green"
+                    android:textColor="#cdcdcd"
+                    android:textSize="@dimen/normal_text"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!-- Layout displaying list activities-->
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layout_child_with_tabs"
+            android:visibility="visible"
+            android:orientation="vertical">
+
+
+            <com.example.dhruvil.geleza_teacherconsole.CustomViews.PagerSlidingTabStrip
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:background="@drawable/background_tab"/>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/rightContainer"
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.webmyne.geleza_learnerportal.Home.ChildCurrentActivityListFragment">
+
+
+
+    <ListView
+        android:layout_marginTop="4dp"
+        android:id="@+id/listCurrentActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layerType="software"
+        android:divider="@null"
+        android:dividerHeight="0dp" />
+
+
+
+
+</FrameLayout>

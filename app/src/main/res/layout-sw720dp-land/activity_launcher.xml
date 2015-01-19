@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".LoginActivity$PlaceholderFragment">
+
+    <!-- TOP BANNER -->
+    <FrameLayout
+        android:background="@color/app_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_strip"
+        android:orientation="vertical">
+
+        <ImageView
+            android:contentDescription="@string/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/geleza_logo"
+            android:layout_gravity="center"
+            android:scaleType="centerInside" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_center_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <!-- first layout for username -->
+
+        <FrameLayout
+
+            android:layout_width="@dimen/login_button_size"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_grey">
+
+            <EditText
+                android:singleLine="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/background_color"
+                android:textColorHint="@color/background_color"
+                android:background="@null"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username..."
+                android:gravity="center"
+                android:padding="8dp" />
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_username"
+                    android:scaleType="centerInside" />
+
+                <View
+
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/background_color"></View>
+
+            </LinearLayout>
+        </FrameLayout>
+
+
+        <!-- Second layout for username -->
+
+        <FrameLayout
+
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_width="@dimen/login_button_size"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_grey">
+
+            <EditText
+                android:singleLine="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/background_color"
+                android:textColorHint="@color/background_color"
+                android:background="@null"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password..."
+                android:gravity="center"
+                android:padding="8dp" />
+
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_password"
+                    android:scaleType="centerInside" />
+
+                <View
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/background_color"></View>
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_below="@id/ll_center_layout"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_ltgrey"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:layout_width="@dimen/login_button_size"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginTop="64dp"
+        android:textSize="22sp"
+        android:gravity="center"
+        />
+
+
+</RelativeLayout>

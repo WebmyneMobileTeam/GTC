@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/linear"
+    android:background="#00000000"
+    android:gravity="center"
+
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <ImageView
+
+            android:src="@drawable/ic_launcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/imgBadge"
+            />
+
+        <TextView
+
+            android:padding="2dp"
+            android:gravity="center"
+            android:id="@+id/txtBadgeValue"
+            android:background="@drawable/badge_yellow"
+            android:layout_width="@dimen/badge_small"
+            android:layout_height="@dimen/badge_small"
+            android:textColor="@color/app_color"
+            android:textSize="18sp" />
+
+    </FrameLayout>
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/txtBadgeName"
+        android:text="Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/background_color"
+        android:textSize="18sp" />
+
+
+</LinearLayout>
