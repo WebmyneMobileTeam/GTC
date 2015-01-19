@@ -173,7 +173,7 @@ public class MainActivity extends FragmentActivity {
             tabView.setImage(subject_icons[i]);
             tabView.setName(subject_names[i]);
             tabView.clearBadge();
-            tabView.resizeImage(150,185);
+            tabView.resizeImage(100,100);
 
             if(i == 2){
                 tabView.displayBadge(2);

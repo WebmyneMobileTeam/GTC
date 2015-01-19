@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/GTC.iml" filepath="$PROJECT_DIR$/GTC.iml" />
       <module fileurl="file://$PROJECT_DIR$/Geleza-TeacherConsole.iml" filepath="$PROJECT_DIR$/Geleza-TeacherConsole.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
